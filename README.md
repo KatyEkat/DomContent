@@ -12,6 +12,7 @@ HTML, SCSS (CSS), JavaScript
 
 ## Project link
 
+https://dom-content.vercel.app/
 
 
 ## Instructions for launching the project
