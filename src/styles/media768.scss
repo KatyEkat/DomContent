@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+	.form-heading {
+		font-size: 42px;
+	}
+
+	.form-description {
+		font-size: 24px;
+	}
+
+	.form-heading-block {
+		gap: 12px;
+	}
+
+	.form-bottom-heading {
+		font-size: 28px;
+	}
+
+	.form-heading-block,
+	.form-inputs,
+	.form__checkbox-label {
+		width: 420px;
+	}
+
+	.form-buttons {
+		width: 324px;
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+	}
+
+	.form__submit {
+		width: 98px;
+	}
+
+	.form-contact {
+		width: 210px;
+	}
+
+	.form__fieldset {
+		width: fit-content;
+	}
+
+	.background-img {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+		width: fit-content;
+	}
+
+	.form-tablet {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.form-top-bl {
+		position: relative;
+		padding: 60px 0 60px 60px;
+		height: 480px;
+	}
+
+	.form-block-content {
+		gap: 40px;
+		z-index: 1;
+	}
+
+	.form__checkbox-label {
+		height: 36px;
+	}
+
+	.form-line-blocks {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+	}
+
+	.form-bottom-content {
+		padding: 60px;
+		gap: 32px;
+	}
+
+	.tablet-size {
+		width: 64px;
+		height: 64px;
+	}
+}

@@ -1,0 +1,26 @@
+@media (min-width: 1200px) {
+  .form {
+    padding: 72px 120px;
+  }
+  .form-line-description {
+    font-size: 18px;
+  }
+  .form-line-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-bottom-block {
+    border-radius: 0 40px 40px 0;
+  }
+  .form-top-bl {
+    border-radius: 40px 0 0 40px;
+  }
+  .form-top-bl {
+    height: auto;
+  }
+}/*# sourceMappingURL=media1200.css.map */

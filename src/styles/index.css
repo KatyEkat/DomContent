@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rostelecom";
+  src: url("../fonts/rostelecombasis_bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.form {
+  display: flex;
+  padding: 72px 20px;
+}
+
+.form-heading {
+  color: rgb(255, 255, 255);
+  font-family: "Prosto One";
+  font-size: clamp(2rem, 1.8355rem + 0.8772vw, 2.625rem);
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+}
+
+.form-description {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: clamp(1.125rem, 1.0263rem + 0.5263vw, 1.5rem);
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.form__input,
+.phone-input-wrapper {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(16, 24, 40);
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgb(237, 238, 240);
+  border-radius: 8px;
+  height: 48px;
+  padding: 12px;
+}
+
+.phone-input::-moz-placeholder, .phone-input::-moz-placeholder {
+  color: rgb(182, 187, 199);
+}
+
+.phone-input::placeholder,
+.phone-input::placeholder {
+  color: rgb(182, 187, 199);
+}
+
+.form__input:focus-visible,
+.phone-input-wrapper:focus-visible {
+  box-sizing: border-box;
+  outline: 2px solid rgb(251, 149, 5);
+  border-radius: 8px;
+}
+
+.phone-input-wrapper {
+  background: white;
+}
+
+.phone-input {
+  border: unset;
+  color: rgb(16, 24, 40);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.phone-country {
+  color: rgb(16, 24, 40);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border: unset;
+}
+
+.form-block {
+  width: 100%;
+}
+
+.form-top-bl {
+  background: #6a50ba;
+  height: 532px;
+  padding: 40px 24px;
+  border-radius: 40px 40px 0 0;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__checkbox-text {
+  color: rgb(76, 82, 94);
+  font-family: "Rostelecom";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.phone-country:focus-visible,
+.phone-input:focus-visible {
+  border: unset;
+  outline: unset;
+}
+
+.form-heading-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-contact {
+  border-radius: 8px;
+  background: rgb(130, 103, 216);
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  height: 48px;
+  width: 100%;
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-contact:hover {
+  background: rgb(144, 116, 235);
+}
+
+.form-contact:active {
+  background: rgb(156, 126, 248);
+}
+
+.form__submit {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgb(251, 149, 5);
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: unset;
+}
+
+.form__submit:hover {
+  background: rgb(235, 156, 43);
+}
+
+.form__submit:active {
+  background: rgb(236, 174, 86);
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.country-dropdown {
+  border: unset;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Jost";
+  font-size: 18px;
+  z-index: 1000;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form__checkbox-label {
+  height: 52px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.form__custom-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.checkbox-bg,
+.checkbox-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  display: block;
+}
+
+.checkbox-bg {
+  z-index: 1;
+}
+
+.checkbox-checkmark {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.form__checkbox:checked + .form__custom-checkbox .checkbox-checkmark {
+  opacity: 1;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-bottom-block {
+  background: rgb(166, 137, 255);
+  border-radius: 0 0 40px 40px;
+  width: 100%;
+}
+
+.form-bottom-heading {
+  color: rgb(255, 255, 255);
+  font-family: "Prosto One";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.form-line-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-line-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-line-description {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.form-bottom-content {
+  display: flex;
+  padding: 40px 24px;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.background-img {
+  display: none;
+}
+
+.form-block-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}/*# sourceMappingURL=index.css.map */
